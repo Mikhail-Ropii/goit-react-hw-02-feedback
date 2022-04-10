@@ -1,4 +1,4 @@
-import { Title } from "./FeedbackStat.styled.js";
+import { Title } from "../feedbackOptions/FeedbackStat.styled.js";
 
 
 export const Section = ({title, children}) => {
