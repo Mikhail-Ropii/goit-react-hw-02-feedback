@@ -1,4 +1,5 @@
 import { StatItem } from '../feedbackOptions/FeedbackStat.styled.js';
+import propTypes from 'prop-types';
 
 export const Statistics = ({
   good,
@@ -16,4 +17,12 @@ export const Statistics = ({
       <StatItem>Positive feedback: {positivePercentage}%</StatItem>
     </>
   );
+};
+
+Statistics.propTypes = {
+  good: propTypes.number,
+  neutral: propTypes.number,
+  bad: propTypes.number,
+  total: propTypes.number,
+  positivePercentage: propTypes.number,
 };
